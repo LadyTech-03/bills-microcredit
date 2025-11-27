@@ -6,6 +6,7 @@ import HowToApply from "@/components/HowToApply";
 import RepaymentUSSD from "@/components/RepaymentUSSD";
 import AboutUs from "@/components/AboutUs";
 import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <RepaymentUSSD />
       <AboutUs />
       <Testimonials />
+      <Footer />
     </div>
   );
 };

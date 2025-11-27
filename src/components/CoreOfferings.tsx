@@ -20,21 +20,21 @@ const offerings = [
     title: "Emergency Loan",
     description: "Quick relief when unexpected needs arise.",
     icon: AlertCircle,
-    image: "/images/business_expansion.jpg",
+    image: "/images/emergency.jpg",
   },
   {
     id: 3,
     title: "Start-Up Loan",
     description: "Turn your skills into a thriving business.",
     icon: GrGrow,
-    image: "/images/business_expansion.jpg",
+    image: "/images/startup.jpg",
   },
   {
     id: 4,
     title: "Salary Advance",
     description: "Meet financial needs before payday.",
     icon: PiHandCoinsBold,
-    image: "/images/business_expansion.jpg",
+    image: "/images/salary.png",
   },
 ];
 
@@ -45,7 +45,7 @@ const CoreOfferings = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % offerings.length);
-    }, 2500);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, []);
