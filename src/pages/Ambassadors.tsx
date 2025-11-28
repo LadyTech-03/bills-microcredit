@@ -32,7 +32,7 @@ const Ambassadors = () => {
       {/* Introduction */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          {/* <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Faces of Financial Empowerment
             </h2>
@@ -41,7 +41,7 @@ const Ambassadors = () => {
               the spirit of Bills Microcredit. They inspire thousands of Ghanaians to 
               pursue their dreams through financial empowerment and entrepreneurship.
             </p>
-          </div>
+          </div> */}
 
           {/* Team Grid */}
           <motion.div
