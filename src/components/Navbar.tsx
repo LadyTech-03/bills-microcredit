@@ -10,18 +10,32 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import SearchDialog from "./SearchDialog";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
+
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   const navItems = [
@@ -109,8 +123,10 @@ const Navbar = () => {
             {/* CTA Section */}
             <div className="flex items-center gap-4">
               <button 
+                onClick={() => setSearchOpen(true)}
                 className="p-2 hover:text-primary transition-colors duration-300"
                 aria-label="Search"
+                title="Search (Ctrl+K)"
               >
                 <Search className="w-5 h-5" />
               </button>
@@ -125,6 +141,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Search Dialog */}
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </nav>
   );
 };
