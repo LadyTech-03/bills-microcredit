@@ -117,13 +117,6 @@ const Navbar = () => {
               <Button className="hover:bg-topbar text-primary-foreground px-6 py-2 transition-all duration-300 shadow-md hover:shadow-lg">
                 Get In Touch
               </Button>
-              <Button 
-                size="icon"
-                className="p-2.5 rounded-full hover:bg-topbar hover:text-primary-foreground hover:border-primary transition-all duration-300"
-                aria-label="Menu"
-              >
-                <Grid3x3 className="w-5 h-5" />
-              </Button>
             </div>
           </div>
         </div>
