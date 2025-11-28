@@ -1,7 +1,7 @@
 import { Search, Grid3x3, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -114,9 +114,13 @@ const Navbar = () => {
               >
                 <Search className="w-5 h-5" />
               </button>
-              <Button className="hover:bg-topbar text-primary-foreground px-6 py-2 transition-all duration-300 shadow-md hover:shadow-lg">
-                Get In Touch
-              </Button>
+              <Link
+                to="/contact"
+              >
+                <Button className="hover:bg-topbar text-primary-foreground px-6 py-2 transition-all duration-300 shadow-md hover:shadow-lg">
+                  Get In Touch
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

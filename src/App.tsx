@@ -8,6 +8,11 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import MediaGallery from "./pages/MediaGallery";
+import BoardOfDirectors from "./pages/BoardOfDirectors";
+import Management from "./pages/Management";
+import Ambassadors from "./pages/Ambassadors";
+import TeamMemberDetail from "./pages/TeamMemberDetail";
+import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +27,14 @@ const App = () => (
           <Route path="/about" element={<About />} />
           {/* <Route path="/products" element={<Product />} /> */}
           <Route path="/gallery" element={<MediaGallery />} />
+          <Route path="/contact" element={<ContactUs />} />
+          
+          {/* Team Routes */}
+          <Route path="/team/board-of-directors" element={<BoardOfDirectors />} />
+          <Route path="/team/management" element={<Management />} />
+          <Route path="/team/ambassador" element={<Ambassadors />} />
+          <Route path="/team/:category/:id" element={<TeamMemberDetail />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -31,3 +44,4 @@ const App = () => (
 );
 
 export default App;
+
