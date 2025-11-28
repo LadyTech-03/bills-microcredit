@@ -20,7 +20,8 @@ const slides = [
     title: "No queues, your loan is just a call away.",
     description: "Skip the long waits. Get your loan approved quickly with just a phone call.",
     cta: "Call Us Now",
-    overlayClass: "bg-gradient-to-tl from-primary/50 via-primary/20 to-black/30",
+    // overlayClass: "bg-gradient-to-tl from-primary/50 via-primary/20 to-black/30",
+    overlayClass: "bg-topbar/60",
     position: "center" as const,
   },
   {
@@ -28,7 +29,8 @@ const slides = [
     title: "We are in all 16 regions of Ghana.",
     description: "Wherever you are in Ghana, Bills Microcredit is there for you.",
     cta: "Find Us",
-    overlayClass: "bg-gradient-to-tr from-primary/50 via-primary/20 to-black/30",
+    // overlayClass: "bg-gradient-to-tr from-primary/50 via-primary/20 to-black/30",
+    overlayClass: "bg-topbar/80",
     position: "right" as const,
   },
   {
@@ -36,7 +38,8 @@ const slides = [
     title: "Get a loan from GHS 1,000 – GHS 150,000.",
     description: "Flexible loan amounts tailored to your needs. Start small or go big.",
     cta: "Discover More",
-    overlayClass: "bg-gradient-to-bl from-primary/60 via-primary/10 to-black/30",
+    // overlayClass: "bg-gradient-to-bl from-primary/60 via-primary/10 to-black/30",
+    overlayClass: "bg-topbar/60",
     position: "left" as const,
   },
 ];
@@ -101,7 +104,7 @@ const HeroCarousel = () => {
                 slide.position === "center" ? "text-center" : ""
               }`}>
                 {/* Title */}
-                <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in">
+                <h1 className="text-5xl md:text-7xl font-extrabold text-primary-foreground mb-6 leading-tight animate-fade-in">
                   {slide.title}
                 </h1>
 

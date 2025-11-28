@@ -7,6 +7,9 @@ const mediaIcons = [
   { name: "Facebook", href: "/icons/facebook-icon.svg", link: "#facebook",},
   { name: "Twitter", href: "/icons/twitter.svg", link: "#twitter",},
   { name: "WhatsApp", href: "/icons/youtube.svg", link: "#youtube",},
+  { name: "Instagram", href: "/icons/instagram-icon.svg", link: "#instagram",},
+  { name: "LinkedIn", href: "/icons/linkedin.svg", link: "#linkedin",},
+  { name: "TikTok", href: "/icons/tiktok-icon-dark.svg", link: "#tiktok",},
 ]
 
 const TopBar = () => {

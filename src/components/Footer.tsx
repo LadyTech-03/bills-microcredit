@@ -12,6 +12,9 @@ const Footer = () => {
     { name: "Facebook", icon: "/icons/facebook-icon.svg", href: "#" },
     { name: "Twitter", icon: "/icons/twitter.svg", href: "#" },
     { name: "Youtube", icon: "/icons/youtube.svg", href: "#" },
+    { name: "Instagram", icon: "/icons/instagram-icon.svg", href: "#" },
+    { name: "LinkedIn", icon: "/icons/linkedin.svg", href: "#" },
+    { name: "TikTok", icon: "/icons/tiktok-icon-dark.svg", href: "#" },
   ];
 
   return (
@@ -33,7 +36,7 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="size-6 rounded-full flex items-center justify-center transition-all duration-300 group"
+                  className="size-5 rounded-full flex items-center justify-center transition-all duration-300 group"
                   aria-label={social.name}
                 >
                   <img src={social.icon} alt={social.name} className="w-full text-topbar-foreground group-hover:text-white transition-colors duration-300" />

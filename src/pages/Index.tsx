@@ -7,6 +7,7 @@ import RepaymentUSSD from "@/components/RepaymentUSSD";
 import AboutUs from "@/components/AboutUs";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <RepaymentUSSD />
       <AboutUs />
       <Testimonials />
+      <Gallery />
       <Footer />
     </div>
   );

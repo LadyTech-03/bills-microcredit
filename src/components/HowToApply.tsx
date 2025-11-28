@@ -51,6 +51,7 @@ const HowToApply = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const progressLineRef = useRef<HTMLDivElement>(null);
   const bgOverlayRef = useRef<HTMLDivElement>(null);
+  const bgOverlayRef2 = useRef<HTMLDivElement>(null);
   const ctaSectionRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
 
@@ -59,17 +60,18 @@ const HowToApply = () => {
     const scrollContainer = scrollContainerRef.current;
     const progressLine = progressLineRef.current;
     const bgOverlay = bgOverlayRef.current;
+    const bgOverlay2 = bgOverlayRef2.current;
     const ctaSection = ctaSectionRef.current;
     const timeline = timelineRef.current;
 
-    if (!container || !scrollContainer || !progressLine || !bgOverlay || !ctaSection || !timeline) return;
+    if (!container || !scrollContainer || !progressLine || !bgOverlay || !bgOverlay2 || !ctaSection || !timeline) return;
 
     // Calculate the total scroll distance (reduced spacing)
     const scrollWidth = scrollContainer.scrollWidth - window.innerWidth;
 
     // Animate background opacity on entry
     gsap.fromTo(
-      bgOverlay,
+      [bgOverlay, bgOverlay2],
       { opacity: 0 },
       {
         opacity: 1,
@@ -103,7 +105,7 @@ const HowToApply = () => {
 
     // Fade out red background and timeline when entering CTA section
     gsap.fromTo(
-      bgOverlay,
+      [bgOverlay, bgOverlay2],
       { opacity: 1 },
       {
         opacity: 0,
@@ -237,7 +239,7 @@ const HowToApply = () => {
       </div>
 
       {/* Section Header - Fixed */}
-      <div className="absolute top-12 left-0 right-0 z-10 text-center px-4">
+      <div ref={bgOverlayRef2} className="absolute top-12 left-0 right-0 z-10 text-center px-4">
         <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-2">
           Simple Process
         </p>
@@ -265,7 +267,7 @@ const HowToApply = () => {
       <div
         ref={scrollContainerRef}
         className="absolute top-0 left-0 h-full flex items-center pl-[50vw] gap-32"
-        style={{ width: `${steps.length * 50 + 60}vw` }}
+        style={{ width: `${steps.length * 50 + 50}vw` }}
       >
         {/* Step Cards */}
         {steps.map((step, index) => {
@@ -345,7 +347,7 @@ const HowToApply = () => {
           {/* CTA Content */}
           <div className="relative h-full flex items-center justify-center text-center text-white px-8">
             <div className="max-w-3xl">
-              <h3 className="text-4xl font-bold mb-6">
+              <h3 className="text-4xl sm:text-5xl font-extrabold mb-6">
                 Are you Ready?
               </h3>
               
@@ -367,13 +369,13 @@ const HowToApply = () => {
                   </div>
                   <div className="text-left">
                     {/* <div className="text-xs text-white/70 font-medium uppercase tracking-wide">Mobile</div> */}
-                    <div className="text-2xl font-black text-white tracking-wider">0596 920 833</div>
+                    <div className="text-2xl font-black text-white tracking-wider">059 692 0833</div>
                   </div>
                 </a>
 
                 {/* Phone 2 */}
                 <a
-                  href="tel:03022003390"
+                  href="tel:0302200390"
                   className="group flex items-center gap-3 px-8 py-5 bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105"
                 >
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -383,7 +385,7 @@ const HowToApply = () => {
                   </div>
                   <div className="text-left">
                     {/* <div className="text-xs text-white/70 font-medium uppercase tracking-wide">Mob</div> */}
-                    <div className="text-2xl font-black text-white tracking-wider">030 2200 3390</div>
+                    <div className="text-2xl font-black text-white tracking-wider">030 220 0390</div>
                   </div>
                 </a>
               </div>
@@ -399,7 +401,7 @@ const HowToApply = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2 text-white/60 animate-bounce">
-        <span className="text-sm font-medium">Scroll to explore</span>
+        <span className="text-sm font-medium">See more</span>
         <svg
           className="w-5 h-5"
           fill="none"
