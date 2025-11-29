@@ -3,6 +3,7 @@ import { useRef } from "react";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
 import { Quote, Calendar, Award, Heart, Users, TrendingUp, CircleCheck } from "lucide-react";
 
 const Ambassadors = () => {
@@ -15,9 +16,19 @@ const Ambassadors = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
+  // Community presence images - Add your image URLs here
+  const communityImages = [
+    "/images/team/ambassador/community-1.jpg",
+    "/images/team/ambassador/community-2.jpg",
+    "/images/team/ambassador/community-3.jpg",
+    "/images/team/ambassador/community-4.jpg",
+    "/images/team/ambassador/community-5.jpg",
+    "/images/team/ambassador/community-6.jpg",
+  ];
+
   // Ambassador data
   const ambassador = {
-    name: "Gloria Safo",
+    name: "Gloria Sarfo",
     title: "OUR AMBASSADOR",
     image: "/images/team/ambassador/hero.webp",
     portraitImage: "/images/team/ambassador/gloria_safo.jpg",
@@ -25,30 +36,30 @@ const Ambassadors = () => {
     signature: "/images/team/ambassador/signature.png",
     story: {
       origin: "Born and raised in Kumasi, I've always believed in the power of hard work and determination. My journey from humble beginnings to becoming one of Ghana's most recognized faces taught me that with the right support, anything is possible.",
-      passion: "Financial empowerment isn't just about money—it's about dignity, hope, and opportunity. I've seen firsthand how access to credit can transform lives, families, and entire communities.",
+      passion: "Financial empowerment isn't just about money, it's about dignity, hope, and opportunity. I've seen firsthand how access to credit can transform lives, families, and entire communities.",
       connection: "Bills Microcredit shares my vision of a Ghana where everyone has the chance to succeed. Their commitment to serving the underserved aligns perfectly with my mission to uplift others."
     },
     milestones: [
       {
-        year: "2000",
+        year: "2015 ",
         title: "Career Beginnings",
         description: "Started acting career, understanding the value of perseverance",
         icon: TrendingUp
       },
       {
-        year: "2010",
+        year: "2020",
         title: "Entrepreneurship Journey",
         description: "Launched multiple businesses, experiencing firsthand the need for accessible financing",
         icon: Award
       },
       {
-        year: "2020",
+        year: "2023",
         title: "Joined Bills Microcredit",
         description: "Became Brand Ambassador to champion financial inclusion",
         icon: Heart
       },
       {
-        year: "2024",
+        year: "2025",
         title: "Community Impact",
         description: "Helped reach over 100,000 clients through advocacy and awareness",
         icon: Users
@@ -74,8 +85,7 @@ const Ambassadors = () => {
           style={{ y }}
           className="absolute inset-0 w-full h-full"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 z-10" />
-          {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" /> */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30 z-10" />
           <img
             src={ambassador.image}
             alt={ambassador.name}
@@ -94,7 +104,7 @@ const Ambassadors = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-wider"
-              style={{ fontFamily: "'Orbitron', sans-serif" }}
+              style={{ fontFamily: "'Cormorant Upright', sans-serif" }}
             >
               {ambassador.name}
             </motion.h1>
@@ -102,32 +112,11 @@ const Ambassadors = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl md:text-3xl text-primary font-semibold mb-8"
+              className="text-xl md:text-2xl text-primary font-bold mb-20"
+              style={{ fontFamily: "'rubik', sans-serif" }}
             >
               {ambassador.title}
             </motion.p>
-            {/* <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="w-24 h-1 bg-primary mx-auto"
-            /> */}
-          </div>
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-        >
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1.5 h-1.5 bg-white rounded-full mt-2"
-            />
           </div>
         </motion.div>
       </section>
@@ -144,9 +133,9 @@ const Ambassadors = () => {
             <Quote className="w-16 h-16 text-primary mx-auto mb-8 opacity-50" />
             <p
               className="text-3xl md:text-4xl italic mb-8 leading-relaxed"
-              style={{ fontFamily: "'Dancing Script', cursive" }}
+              style={{ fontFamily: "'Edu NSW ACT Hand Pre', cursive" }}
             >
-              "{ambassador.quote}"
+              {ambassador.quote}
             </p>
             {/* Signature */}
             <div className="flex justify-center">
@@ -231,6 +220,31 @@ const Ambassadors = () => {
               </motion.div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Community Presence Section - Infinite Carousel */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              Community Presence
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <InfiniteCarousel images={communityImages} autoPlaySpeed={3000} />
+          </motion.div>
         </div>
       </section>
 

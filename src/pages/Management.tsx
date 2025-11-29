@@ -25,8 +25,9 @@ const Management = () => {
       {/* Hero Section */}
       <PageHero
         title="Management Team"
-        image="/images/team/management-hero.jpg"
+        image="/logos/logo.png"
         breadcrumbItems="Management"
+        imageStyle={{backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}
       />
 
       {/* Introduction */}

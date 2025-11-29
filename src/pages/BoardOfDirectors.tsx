@@ -25,8 +25,10 @@ const BoardOfDirectors = () => {
       {/* Hero Section */}
       <PageHero
         title="Board of Directors"
-        image="/images/team/board/hero.jpg"
+        // image="/images/team/board/hero.jpg"
+        image="/logos/logo.png"
         breadcrumbItems="Board of Directors"
+        imageStyle={{backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}
       />
 
       {/* Introduction */}

@@ -12,11 +12,12 @@ const PageHero = ({
     title,
     image,
     breadcrumbItems,
+    imageStyle = {},
 }) => {
     return (
         <div 
             className="relative py-24 px-4 sm:px-6 lg:px-8 bg-cover bg-center h-42"
-            style={{ backgroundImage: `url('${image}')` }}
+            style={{ backgroundImage: `url('${image}')`, ...imageStyle }}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-topbar/70" />
