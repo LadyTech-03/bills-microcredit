@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { TeamMember } from "@/data/teamData";
 import { Linkedin, Mail, Phone, Award, GraduationCap, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Separator } from "../ui/separator";
 
 interface TeamMemberCardProps {
   member: TeamMember;
@@ -15,7 +16,7 @@ const TeamMemberCard = ({ member, category }: TeamMemberCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -8 }}
-      className="group relative bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
+      className="group relative bg-topbar dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
     >
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-gray-200 dark:bg-gray-800">
@@ -37,16 +38,13 @@ const TeamMemberCard = ({ member, category }: TeamMemberCardProps) => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+        <h3 className="text-xl font-bold text-topbar-foreground mb-1">
           {member.name}
         </h3>
-        <p className="text-primary font-semibold mb-3">{member.position}</p>
-        <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4">
-          {member.bio}
-        </p>
+        <p className="text-primary text-lg font-semibold mb-3">{member.position}</p>
 
         {/* Social Links */}
-        <div className="flex items-center gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex items-center gap-3">
           {member.linkedIn && (
             <a
               href={member.linkedIn}

@@ -16,15 +16,14 @@ export interface TeamMember {
 
 export type TeamCategory = "board" | "management" | "ambassadors";
 
-// Mock data - Replace with actual data
 export const boardMembers: TeamMember[] = [
     {
         id: "board-1",
-        name: "Dr. Kwame Mensah",
-        position: "Chairman",
+        name: "KWADWO DEI KWARTENG",
+        position: "Board Chairman",
         role: "Board of Directors",
-        photo: "/images/team/board/chairman.jpg",
-        bio: "Dr. Mensah brings over 30 years of experience in financial services and corporate governance. He has been instrumental in shaping Bills Microcredit's strategic direction.",
+        photo: "/images/team/board/kwadwo_dei_kwarteng.jpg",
+        bio: "Mr. Kwarteng brings over 30 years of experience in financial services and corporate governance. He has been instrumental in shaping Bills Microcredit's strategic direction.",
         linkedIn: "https://linkedin.com/in/kwame-mensah",
         email: "chairman@billsmicrocredit.com",
         achievements: [
@@ -45,11 +44,11 @@ export const boardMembers: TeamMember[] = [
     },
     {
         id: "board-2",
-        name: "Mrs. Abena Osei",
-        position: "Vice Chairperson",
+        name: "ROMEO-RICHLOVE KWEKU ELORM SESHIE",
+        position: "Board Member",
         role: "Board of Directors",
-        photo: "/images/team/board/vice-chair.jpg",
-        bio: "Mrs. Osei is a seasoned banker with expertise in microfinance and rural banking. She champions financial inclusion initiatives across Ghana.",
+        photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        bio: "Mr. Romeo is a seasoned banker with expertise in microfinance and rural banking. She champions financial inclusion initiatives across Ghana.",
         linkedIn: "https://linkedin.com/in/abena-osei",
         email: "vice.chair@billsmicrocredit.com",
         achievements: [
@@ -69,11 +68,34 @@ export const boardMembers: TeamMember[] = [
     },
     {
         id: "board-3",
-        name: "Mr. Kofi Asante",
+        name: "EMMANUEL N. L. LAMPTEY",
         position: "Board Member",
         role: "Board of Directors",
-        photo: "/images/team/board/member-1.jpg",
-        bio: "Mr. Asante is a financial strategist with deep knowledge in risk management and regulatory compliance in the microfinance sector.",
+        photo: "/images/team/board/emanuel_n_l_lamptey.jpg",
+        bio: "Mr. Emmanuel is a financial strategist with deep knowledge in risk management and regulatory compliance in the microfinance sector.",
+        linkedIn: "https://linkedin.com/in/kofi-asante",
+        achievements: [
+            "Developed comprehensive risk management framework",
+            "Ensured 100% regulatory compliance for 10 years",
+            "Financial Risk Management Excellence Award 2021"
+        ],
+        education: [
+            "MSc Risk Management - University of Manchester",
+            "BCom Accounting - KNUST"
+        ],
+        experience: [
+            "Board Member, Bills Microcredit Ltd (2013 - Present)",
+            "Chief Risk Officer, Fidelity Bank (2009 - 2013)",
+            "Risk Analyst, Standard Chartered Bank (2005 - 2009)"
+        ]
+    },
+    {
+        id: "board-4",
+        name: "ABIGAIL NAA DEDEI QUAYE",
+        position: "Board Secretary",
+        role: "Board of Directors",
+        photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        bio: "Ms. Abigail is a financial strategist with deep knowledge in risk management and regulatory compliance in the microfinance sector.",
         linkedIn: "https://linkedin.com/in/kofi-asante",
         achievements: [
             "Developed comprehensive risk management framework",
@@ -95,11 +117,11 @@ export const boardMembers: TeamMember[] = [
 export const managementTeam: TeamMember[] = [
     {
         id: "mgmt-1",
-        name: "Mr. Emmanuel Darko",
+        name: "ROMEO-RICHLOVE KWEKU ELORM SESHIE",
         position: "Chief Executive Officer",
         role: "Management",
-        photo: "/images/team/management/ceo.jpg",
-        bio: "Emmanuel leads the day-to-day operations of Bills Microcredit with a focus on innovation, customer service excellence, and sustainable growth.",
+        photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        bio: "Mr. Romeo is a seasoned banker with expertise in microfinance and rural banking. She champions financial inclusion initiatives across Ghana.",
         linkedIn: "https://linkedin.com/in/emmanuel-darko",
         email: "ceo@billsmicrocredit.com",
         phone: "+233 24 123 4567",
@@ -120,12 +142,12 @@ export const managementTeam: TeamMember[] = [
     },
     {
         id: "mgmt-2",
-        name: "Mrs. Akua Boateng",
-        position: "Chief Financial Officer",
+        name: "BISMARK ADJEI",
+        position: "Head of Credit Union, Monitoring and Evaluation",
         role: "Management",
-        photo: "/images/team/management/cfo.jpg",
-        bio: "Akua oversees all financial operations, ensuring fiscal responsibility and strategic financial planning for sustainable growth.",
-        linkedIn: "https://linkedin.com/in/akua-boateng",
+        photo: "/images/team/management/bismark_adjei.jpg",
+        bio: "Mr. Bismark oversees all financial operations, ensuring fiscal responsibility and strategic financial planning for sustainable growth.",
+        linkedIn: "https://linkedin.com/in/bismark-adjei",
         email: "cfo@billsmicrocredit.com",
         achievements: [
             "Maintained profitability for 8 consecutive years",
@@ -145,11 +167,11 @@ export const managementTeam: TeamMember[] = [
     },
     {
         id: "mgmt-3",
-        name: "Mr. Yaw Mensah",
-        position: "Chief Operations Officer",
+        name: "ISAAC KWAKU EGYIR ARTHUR",
+        position: "CA, CT, BCOM (HEAD OF INTERNAL AUDIT)",
         role: "Management",
-        photo: "/images/team/management/coo.jpg",
-        bio: "Yaw manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
+        photo: "/images/team/management/isaac_egoir_arthur.jpg",
+        bio: "Isaac manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
         linkedIn: "https://linkedin.com/in/yaw-mensah",
         email: "coo@billsmicrocredit.com",
         achievements: [
@@ -166,7 +188,103 @@ export const managementTeam: TeamMember[] = [
             "Regional Manager, Advans Ghana (2013 - 2017)",
             "Operations Manager, Fidelity Bank (2009 - 2013)"
         ]
-    }
+    },
+    {
+        id: "mgmt-4",
+        name: "NUHU SALIFU",
+        position: "Head of Finance and Administration",
+        role: "Management",
+        photo: "/images/team/management/nuhu_salifu.jpg",
+        bio: "Nuhu manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
+        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        email: "coo@billsmicrocredit.com",
+        achievements: [
+            "Expanded operations to all 16 regions of Ghana",
+            "Reduced operational costs by 25% through process optimization",
+            "Operations Excellence Award 2023"
+        ],
+        education: [
+            "MBA Operations Management - Ashesi University",
+            "BSc Business Administration - KNUST"
+        ],
+        experience: [
+            "COO, Bills Microcredit Ltd (2017 - Present)",
+            "Regional Manager, Advans Ghana (2013 - 2017)",
+            "Operations Manager, Fidelity Bank (2009 - 2013)"
+        ]
+    },
+    {
+        id: "mgmt-5",
+        name: "KWEKU BAAH",
+        position: "Head of Operations",
+        role: "Management",
+        photo: "/images/team/management/kweku_bah.jpg",
+        bio: "Kweku manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
+        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        email: "coo@billsmicrocredit.com",
+        achievements: [
+            "Expanded operations to all 16 regions of Ghana",
+            "Reduced operational costs by 25% through process optimization",
+            "Operations Excellence Award 2023"
+        ],
+        education: [
+            "MBA Operations Management - Ashesi University",
+            "BSc Business Administration - KNUST"
+        ],
+        experience: [
+            "COO, Bills Microcredit Ltd (2017 - Present)",
+            "Regional Manager, Advans Ghana (2013 - 2017)",
+            "Operations Manager, Fidelity Bank (2009 - 2013)"
+        ]
+    },
+    {
+        id: "mgmt-6",
+        name: "ABIGAIL NAA DEDEI QUAYE",
+        position: "Head of Human Capital",
+        role: "Management",
+        photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        bio: "Abigail manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
+        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        email: "coo@billsmicrocredit.com",
+        achievements: [
+            "Expanded operations to all 16 regions of Ghana",
+            "Reduced operational costs by 25% through process optimization",
+            "Operations Excellence Award 2023"
+        ],
+        education: [
+            "MBA Operations Management - Ashesi University",
+            "BSc Business Administration - KNUST"
+        ],
+        experience: [
+            "COO, Bills Microcredit Ltd (2017 - Present)",
+            "Regional Manager, Advans Ghana (2013 - 2017)",
+            "Operations Manager, Fidelity Bank (2009 - 2013)"
+        ]
+    },
+    {
+        id: "mgmt-6",
+        name: "SAVIOUR QUAMMEY",
+        position: "Head of Recovery",
+        role: "Management",
+        photo: "/images/team/management/saviour_quamme.jpg",
+        bio: "Abigail manages operational efficiency across all 16 regions, ensuring seamless service delivery to clients nationwide.",
+        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        email: "coo@billsmicrocredit.com",
+        achievements: [
+            "Expanded operations to all 16 regions of Ghana",
+            "Reduced operational costs by 25% through process optimization",
+            "Operations Excellence Award 2023"
+        ],
+        education: [
+            "MBA Operations Management - Ashesi University",
+            "BSc Business Administration - KNUST"
+        ],
+        experience: [
+            "COO, Bills Microcredit Ltd (2017 - Present)",
+            "Regional Manager, Advans Ghana (2013 - 2017)",
+            "Operations Manager, Fidelity Bank (2009 - 2013)"
+        ]
+    },
 ];
 
 export const ambassadors: TeamMember[] = [

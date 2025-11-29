@@ -1,13 +1,12 @@
-import { Building2, Users, Heart, Award } from "lucide-react";
+import { Calendar1, Users, Heart, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
-import { LuBriefcaseBusiness } from "react-icons/lu";
 import AnimatedCounter from "../AnimatedCounter";
 
 const WhoWeAre = () => {
   const stats = [
-    { number: 16, suffix: "+", label: "Years of Service", icon: LuBriefcaseBusiness },
+    { number: 16, suffix: "+", label: "Years of Service", icon: Calendar1 },
     { number: 2000, suffix: "+", label: "Staff Nationwide", icon: Users },
     { number: 500000, suffix: "", label: "Clients Served", icon: Heart },
   ];

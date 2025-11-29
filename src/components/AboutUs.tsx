@@ -1,4 +1,4 @@
-import { ArrowRight, Users, Building2, Heart } from "lucide-react";
+import { ArrowRight, Users, Calendar1, Heart } from "lucide-react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -31,7 +31,7 @@ const AnimatedCounter = ({ value, suffix = "" }: { value: number; suffix?: strin
 
 const AboutUs = () => {
   const stats = [
-    { number: 16, suffix: "+", label: "Years of Service", icon: Building2 },
+    { number: 16, suffix: "+", label: "Years of Service", icon: Calendar1 },
     { number: 1500, suffix: "+", label: "Dedicated Staff", icon: Users },
     { number: 100, suffix: "%", label: "Customer Focus", icon: Heart },
   ];
@@ -88,8 +88,8 @@ const AboutUs = () => {
                   className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-500 group hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <IconComponent className="w-7 h-7 text-primary" strokeWidth={2.5} />
+                    <div className="w-14 h-14 rounded-xl bg-topbar-foreground flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <IconComponent className="w-7 h-7 text-topbar" strokeWidth={2.5} />
                     </div>
                     <div>
                       <AnimatedCounter value={stat.number} suffix={stat.suffix} />

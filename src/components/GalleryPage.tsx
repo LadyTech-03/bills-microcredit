@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { X, Award, Users, Heart, TrendingUp, Briefcase, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
-import { galleryImages } from "@/lib/constants";
+import { galleryImages } from "@/data/galleryImages";
 
 interface GalleryImage {
   url: string;
