@@ -37,15 +37,18 @@ const YourNeeds = () => {
     },
     {
       name: "Tailor",
-      image: "/images/about_us/tailor.jpg",
+      // image: "/images/about_us/tailor.jpg",
+      image: "https://ik.imagekit.io/nsuolqs5g/others/tailor.jpg?updatedAt=1764454764353",
     },
     {
       name: "Nurse",
-      image: "/images/about_us/nurse.jpg",
+      // image: "/images/about_us/nurse.jpg",
+      image: "https://ik.imagekit.io/nsuolqs5g/others/nurse.jpg?updatedAt=1764454763685",
     },
     {
       name: "Driver",
-      image: "/images/about_us/driver.jpg",
+      // image: "/images/about_us/driver.jpg",
+      image: "https://ik.imagekit.io/nsuolqs5g/others/driver.jpg?updatedAt=1764454764680",
     },
   ];
 

@@ -1,7 +1,7 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { getTeamMemberById, getTeamMembers, TeamCategory } from "@/data/teamData";
-import { Linkedin, Mail, Phone, Award, GraduationCap, Briefcase, ArrowLeft, ChevronRight } from "lucide-react";
+import { Linkedin, Mail, Phone, Award, GraduationCap, NotebookPen, ArrowLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
@@ -38,7 +38,7 @@ const TeamMemberDetail = () => {
           <Button
             variant="ghost"
             onClick={() => navigate(-1)}
-            className="mb-8 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="mb-8 hover:bg-primary"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Team
@@ -112,73 +112,26 @@ const TeamMemberDetail = () => {
                 </div>
 
                 {/* Detailed Information */}
-                <div className="p-8 border-t border-gray-200 dark:border-gray-700 space-y-8">
-                  {/* Achievements */}
-                  {member.achievements && member.achievements.length > 0 && (
+                <div className="p-8 border-t border-gray-200 dark:border-gray-700">
+                  {/* Comprehensive Bio */}
+                  {member.fullBio && (
                     <div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <Award className="w-6 h-6 text-primary" />
+                      <div className="flex items-center gap-2 mb-6">
+                        <NotebookPen className="w-6 h-6 text-primary" />
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                          Key Achievements
+                          Bio
                         </h2>
                       </div>
-                      <ul className="space-y-2">
-                        {member.achievements.map((achievement, index) => (
-                          <li
-                            key={index}
-                            className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
+                      <div className="prose prose-lg dark:prose-invert max-w-none">
+                        {member.fullBio.split('\n\n').map((paragraph, index) => (
+                          <p 
+                            key={index} 
+                            className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-justify"
                           >
-                            <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span>{achievement}</span>
-                          </li>
+                            {paragraph.trim()}
+                          </p>
                         ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Education */}
-                  {member.education && member.education.length > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <GraduationCap className="w-6 h-6 text-primary" />
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                          Education
-                        </h2>
                       </div>
-                      <ul className="space-y-2">
-                        {member.education.map((edu, index) => (
-                          <li
-                            key={index}
-                            className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
-                          >
-                            <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span>{edu}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Experience */}
-                  {member.experience && member.experience.length > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <Briefcase className="w-6 h-6 text-primary" />
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                          Professional Experience
-                        </h2>
-                      </div>
-                      <ul className="space-y-2">
-                        {member.experience.map((exp, index) => (
-                          <li
-                            key={index}
-                            className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
-                          >
-                            <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span>{exp}</span>
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                   )}
                 </div>

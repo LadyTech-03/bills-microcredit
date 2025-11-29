@@ -14,28 +14,32 @@ const steps = [
     title: "CALL US",
     description: "Let's talk about your needs",
     icon: Phone,
-    image: "/images/call.png",
+    // image: "/images/call.png",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/call.png",
   },
   {
     id: 2,
     title: "WE COME TO YOU",
     description: "No queues, no branches.",
     icon: MapPin,
-    image: "/images/come_to_you.jpg",
+    // image: "/images/come_to_you.jpg",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/come_to_you.jpg?updatedAt=1764454772813",
   },
   {
     id: 3,
     title: "SUBMIT YOUR GHANA CARD",
     description: "That's all we need.",
     icon: IdCard,
-    image: "/images/ghana_card.jpg",
+    // image: "/images/ghana_card.jpg",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/ghana_card.jpg?updatedAt=1764454761085",
   },
   {
     id: 4,
     title: "QUICK FUND DISBURSEMENT",
     description: "Mobile Money or Bank.",
     icon: GiTakeMyMoney,
-    image: "/images/quick_fund.jpg",
+    // image: "/images/quick_fund.jpg",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/quick_fund.jpg?updatedAt=1764454761713",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const steps = [
     description: "Use USSD code",
     icon: RefreshCw,
     image: "/images/repay.jpg",
+    // image: "https://ik.imagekit.io/nsuolqs5g/others/repay.jpg?updatedAt=1764454775035",
   },
 ];
 
@@ -336,7 +341,8 @@ const HowToApply = () => {
           <div className="absolute inset-0 bg-white">
             {/* Background Image */}
             <img
-              src="/images/cta-woman.png"
+              // src="/images/cta-woman.png"
+              src="https://ik.imagekit.io/nsuolqs5g/others/cta-woman.png?updatedAt=1764454769933"
               alt="Apply Now"
               className="absolute inset-0 w-[40vw] h-auto object-cover object-center"
             />

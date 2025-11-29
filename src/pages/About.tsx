@@ -29,7 +29,8 @@ const About = () => {
       {/* Page Hero with Background Image */}
       <PageHero
         title="Who We Are"
-        image="/images/about_us/hero.jpg"
+        // image="/images/about_us/hero.jpg"
+        image="https://ik.imagekit.io/nsuolqs5g/others/hero.jpg?updatedAt=1764454768531"
         breadcrumbItems="About Us"
       />
       

@@ -26,7 +26,8 @@ const BoardOfDirectors = () => {
       <PageHero
         title="Board of Directors"
         // image="/images/team/board/hero.jpg"
-        image="/logos/logo.png"
+        // image="/logos/logo.png"
+        image="https://ik.imagekit.io/nsuolqs5g/others/logo.png"
         breadcrumbItems="Board of Directors"
         imageStyle={{backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}
       />

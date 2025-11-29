@@ -8,7 +8,8 @@ import hero4 from "@/assets/hero-4.jpg";
 
 const slides = [
   {
-    image: hero1,
+    // image: hero1,
+    image: 'https://ik.imagekit.io/nsuolqs5g/others/hero-1.jpg?updatedAt=1764456720078',
     title: "Get a loan with just your Ghana Card.",
     description: "Fast, easy access to credit. All you need is your Ghana Card.",
     cta: "Apply Now",
@@ -16,7 +17,8 @@ const slides = [
     position: "left" as const,
   },
   {
-    image: hero2,
+    // image: hero2,
+    image: 'https://ik.imagekit.io/nsuolqs5g/others/hero-2.jpg?updatedAt=1764456720132',
     title: "No queues, your loan is just a call away.",
     description: "Skip the long waits. Get your loan approved quickly with just a phone call.",
     cta: "Call Us Now",
@@ -25,7 +27,8 @@ const slides = [
     position: "center" as const,
   },
   {
-    image: hero3,
+    // image: hero3,
+    image: "https://ik.imagekit.io/nsuolqs5g/others/hero-3.jpg?updatedAt=1764456722169",
     title: "We are in all 16 regions of Ghana.",
     description: "Wherever you are in Ghana, Bills Microcredit is there for you.",
     cta: "Find Us",
@@ -34,7 +37,8 @@ const slides = [
     position: "right" as const,
   },
   {
-    image: hero4,
+    // image: hero4,
+    image: 'https://ik.imagekit.io/nsuolqs5g/others/hero-4.jpg?updatedAt=1764456720397',
     title: "Get a loan from GHS 1,000 – GHS 150,000.",
     description: "Flexible loan amounts tailored to your needs. Start small or go big.",
     cta: "Discover More",

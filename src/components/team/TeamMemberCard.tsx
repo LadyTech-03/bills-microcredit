@@ -30,7 +30,7 @@ const TeamMemberCard = ({ member, category }: TeamMemberCardProps) => {
             to={`/team/${category}/${member.id}`}
             className="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors duration-300"
           >
-            View Profile
+            View Bio
           </Link>
         </div>
       </div>

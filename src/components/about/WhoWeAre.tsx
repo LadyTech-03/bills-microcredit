@@ -47,7 +47,8 @@ const WhoWeAre = () => {
             {/* Staff Durbar Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-gray-100 dark:bg-gray-800">
               <img
-                src="/images/about_us/growing_staff.jpg"
+                // src="/images/about_us/growing_staff.jpg"
+                src="https://ik.imagekit.io/nsuolqs5g/others/growing_staff.jpg?updatedAt=1764454768723"
                 alt="Bills Microcredit Staff Durbar"
                 className="w-full h-full object-cover"
               />

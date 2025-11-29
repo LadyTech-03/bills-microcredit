@@ -19,7 +19,8 @@ const OurReach = () => {
           {/* Left Column - Map */}
           <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-square">
             <img
-              src="/images/about_us/ghana_map.png"
+              // src="/images/about_us/ghana_map.png"
+              src="https://ik.imagekit.io/nsuolqs5g/others/ghana_map.png?updatedAt=1764454775206"
               alt="Ghana Map - Bills Microcredit Coverage"
               className="w-full h-full object-contain p-8 hover:scale-105 transition-all duration-1000"
             />
