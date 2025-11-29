@@ -25,7 +25,7 @@ const BoardOfDirectors = () => {
       {/* Hero Section */}
       <PageHero
         title="Board of Directors"
-        image="/images/team/board-hero.jpg"
+        image="/images/team/board/hero.jpg"
         breadcrumbItems="Board of Directors"
       />
 

@@ -262,7 +262,7 @@ export const managementTeam: TeamMember[] = [
         ]
     },
     {
-        id: "mgmt-6",
+        id: "mgmt-7",
         name: "SAVIOUR QUAMMEY",
         position: "Head of Recovery",
         role: "Management",
@@ -307,25 +307,6 @@ export const ambassadors: TeamMember[] = [
             "Actress & Entrepreneur (2000 - Present)"
         ]
     },
-    {
-        id: "amb-2",
-        name: "John Dumelo",
-        position: "Youth Ambassador",
-        role: "Ambassador",
-        photo: "/images/team/ambassadors/dumelo.jpg",
-        bio: "Actor, farmer, and entrepreneur, John Dumelo champions youth empowerment and agricultural financing through Bills Microcredit.",
-        linkedIn: "https://linkedin.com/in/john-dumelo",
-        achievements: [
-            "Ghana Movie Awards - Best Actor",
-            "Successful agribusiness entrepreneur",
-            "Youth empowerment advocate"
-        ],
-        experience: [
-            "Youth Ambassador, Bills Microcredit Ltd (2021 - Present)",
-            "Farmer & Entrepreneur (2015 - Present)",
-            "Actor & Producer (2005 - Present)"
-        ]
-    }
 ];
 
 export const getTeamMembers = (category: TeamCategory): TeamMember[] => {

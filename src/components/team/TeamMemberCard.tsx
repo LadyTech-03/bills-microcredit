@@ -15,7 +15,6 @@ const TeamMemberCard = ({ member, category }: TeamMemberCardProps) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      whileHover={{ y: -8 }}
       className="group relative bg-topbar dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
     >
       {/* Image */}
