@@ -4,7 +4,7 @@ import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InfiniteScrollCarousel from "@/components/InfiniteScrollCarousel";
-import { Quote, Calendar, Award, Heart, Users, TrendingUp, CircleCheck } from "lucide-react";
+import { Quote, Calendar, Award, Heart, Users, TrendingUp, CircleCheck, RefreshCcw } from "lucide-react";
 
 const Ambassadors = () => {
   const heroRef = useRef(null);
@@ -47,31 +47,31 @@ const Ambassadors = () => {
         year: "2015 ",
         title: "Career Beginnings",
         description: "Started acting career, understanding the value of perseverance",
-        icon: TrendingUp
+        icon: CircleCheck
       },
       {
         year: "2020",
         title: "Entrepreneurship Journey",
         description: "Launched multiple businesses, experiencing firsthand the need for accessible financing",
-        icon: Award
+        icon: CircleCheck
       },
       {
         year: "2023",
         title: "Joined Bills Microcredit",
         description: "Became Brand Ambassador to champion financial inclusion",
-        icon: Heart
+        icon: CircleCheck
       },
       {
         year: "2025",
         title: "Community Impact",
         description: "Helped reach over 100,000 clients through advocacy and awareness",
-        icon: Users
+        icon: CircleCheck
       },
       {
         year: "Future",
         title: "Vision 2030",
         description: "Expanding financial literacy programs to every region of Ghana",
-        icon: Calendar
+        icon: RefreshCcw
       }
     ]
   };
@@ -230,7 +230,7 @@ const Ambassadors = () => {
 
       {/* Community Presence Section - Infinite Carousel */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-full mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -301,8 +301,8 @@ const Ambassadors = () => {
                     {/* Icon */}
                     <div className="relative z-10">
                       <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                        {/* <IconComponent className="w-8 h-8 text-white" /> */}
-                        <CircleCheck className="w-8 h-8 text-white" />
+                        <IconComponent className="w-8 h-8 text-white" />
+                        {/* <CircleCheck className="w-8 h-8 text-white" /> */}
                       </div>
                     </div>
 

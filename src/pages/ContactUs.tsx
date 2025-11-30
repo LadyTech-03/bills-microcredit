@@ -267,7 +267,7 @@ const ContactUs = () => {
           {/* Google Maps Embed */}
           <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7174739862!2d-0.1969!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMTMuMyJOIDDCsDExJzQ4LjgiVw!5e0!3m2!1sen!2sgh!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40990.64740478214!2d-0.22418013075448645!3d5.590692402611465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b08bbeb7e2f%3A0xc9d0a0d293a3d167!2sBILLS%20MICRO-CREDIT%20LTD!5e1!3m2!1sen!2sgh!4v1764488734159!5m2!1sen!2sgh"
               width="100%"
               height="500"
               style={{ border: 0 }}

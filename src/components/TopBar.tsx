@@ -8,7 +8,7 @@ const mediaIcons = [
   { name: "Twitter", href: "/icons/twitter.svg", link: "#twitter",},
   { name: "WhatsApp", href: "/icons/youtube.svg", link: "#youtube",},
   { name: "Instagram", href: "/icons/instagram-icon.svg", link: "#instagram",},
-  { name: "LinkedIn", href: "/icons/linkedin.svg", link: "#linkedin",},
+  { name: "LinkedIn", href: "/icons/linkedin.svg", link: "https://www.linkedin.com/company/billsmicrocredit",},
   { name: "TikTok", href: "/icons/tiktok-icon-dark.svg", link: "#tiktok",},
 ]
 
