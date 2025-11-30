@@ -45,7 +45,7 @@ const MissionVision = () => {
               <PiHandCoins className="w-7 h-7 text-primary" strokeWidth={2.5} />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">We give loans up to</h3>
             </div>
-            <div className="text-5xl font-black text-primary mb-2">GH₵ 200,000</div>
+            <div className="text-5xl font-black text-primary mb-2">GH₵ 150,000</div>
             {/* <p className="text-gray-700 dark:text-gray-300">
               Supporting your biggest dreams and ambitions
             </p> */}
