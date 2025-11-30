@@ -18,26 +18,23 @@ const Ambassadors = () => {
 
   // Community presence images - Add your image URLs here
   const communityImages = [
-    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/moment_1.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/b1032d0d-e9c7-4fdb-bd5e-ffb093438e1c.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/793fdd3a-20e0-4d6a-8c3c-07478cf3f308.jpg",
     "https://ik.imagekit.io/nsuolqs5g/others/ambassador/moment_8.jpg",
-    // "/images/team/ambassador/moment_2.jpg",
-    // "/images/team/ambassador/moment_3.jpg",
-    // "/images/team/ambassador/moment_4.jpg",
-    // "/images/team/ambassador/moment_5.jpg",
-    // "/images/team/ambassador/moment_6.jpg",
-    // "/images/team/ambassador/moment_7.jpg",
-    // "/images/team/ambassador/moment_8.jpg",
-    // "/images/team/ambassador/moment_9.jpg",
-    // "/images/team/ambassador/moment_10.jpg",
-    // "/images/team/ambassador/moment_11.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/77efc58a-18e0-41fd-8c1b-45d0a7e99681.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/1484b86c-3f6a-405c-9691-6fe0928933b5.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/a6c3240e-f65a-473d-9e7e-a61410160d8c.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/34ec9612-8166-4784-8271-258f68612354.jpg",
   ];
 
   // Ambassador data
   const ambassador = {
     name: "Gloria Sarfo",
     title: "OUR AMBASSADOR",
-    image: "/images/team/ambassador/hero.webp",
-    portraitImage: "/images/team/ambassador/gloria_safo.jpg",
+    // image: "/images/team/ambassador/hero.webp",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/ambassador/hero.webp?updatedAt=1764454761062",
+    // portraitImage: "/images/team/ambassador/gloria_safo.jpg",
+    portraitImage: "https://ik.imagekit.io/nsuolqs5g/others/ambassador/f893d928-6aad-44b9-8ccc-943634cdf269.jpg",
     quote: "Ambassador's quote will be here (if she has any)",
     signature: "/images/team/ambassador/signature.png",
     story: {

@@ -11,7 +11,7 @@ const AnniversaryVideo = () => {
       <section className="relative py-0 overflow-hidden shadow-xl">
         <div 
           className="relative h-[600px] bg-cover bg-center cursor-pointer group"
-          style={{ backgroundImage: "url('/images/about_us/anniversary.jpg')" }}
+          style={{ backgroundImage: "url('https://ik.imagekit.io/nsuolqs5g/others/2c63a155-6bb7-474d-945f-f1bdfab7d244.jpg')" }}
           onClick={() => setIsModalOpen(true)}
         >
           {/* Dark Overlay */}

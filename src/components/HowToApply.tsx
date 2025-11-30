@@ -46,8 +46,8 @@ const steps = [
     title: "REPAY EASILY",
     description: "Use USSD code",
     icon: RefreshCw,
-    image: "/images/repay.jpg",
-    // image: "https://ik.imagekit.io/nsuolqs5g/others/repay.jpg?updatedAt=1764454775035",
+    // image: "/images/repay.jpg",
+    image: "https://ik.imagekit.io/nsuolqs5g/others/2155a319-5f85-4a3f-9468-82b1308a1302.jpg",
   },
 ];
 
