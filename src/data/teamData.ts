@@ -57,7 +57,8 @@ export const boardMembers: TeamMember[] = [
         name: "ROMEO-RICHLOVE KWEKU ELORM SESHIE",
         position: "Board Member",
         role: "Board of Directors",
-        photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        // photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/board/romeo-richlove_kweku_elorm_seshie.jpg?updatedAt=1764454762168",
         fullBio: `Romeo-Richlove Elorm Kweku Seshie is the Chief Executive Officer (CEO) of BILLS Micro-Credit Ltd, having risen through the ranks after previously serving as the General Manager and Head of Finance and Administration of the company. Under his visionary leadership, BILLS has achieved significant milestones, gaining both national and international recognition for innovation and financial inclusion.
 
                     Romeo boasts a robust academic and professional background in finance, accounting, taxation, banking and strategic management.
@@ -96,7 +97,8 @@ export const boardMembers: TeamMember[] = [
         name: "EMMANUEL N. L. LAMPTEY",
         position: "Board Member",
         role: "Board of Directors",
-        photo: "/images/team/board/emanuel_n_l_lamptey.jpg",
+        // photo: "/images/team/board/emanuel_n_l_lamptey.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/board/emanuel_n_l_lamptey.jpg?updatedAt=1764454762066",
         fullBio: `Emmanuel N.L. Lamptey is a visionary entrepreneur and seasoned executive with a wealth of experience in business development, human resource management, finance, and administration. Currently serving as the Chairman and Chief Executive Officer of Quick Angels Limited, Mr. Lamptey plays a critical role in shaping Ghana’s entrepreneurial landscape through equity financing. Under his leadership, Quick Angels has expanded its investment portfolio to include over 30 innovative and high-growth businesses across various sectors. Notable among these are Ceqa Foods and Beverages Ghana Ltd, Gold Coast Foods Herbs and Spices Ltd, Coli Link Ghana, Ridge Medical Centre, and Superior Fisheries and Aquaculture.
 
                     Before his elevation to CEO and Board Chairman of Quick Angels, Mr. Lamptey served diligently as the company’s General Manager, where he distinguished himself through strategic insight, operational efficiency, and transformative leadership.
@@ -132,7 +134,8 @@ export const boardMembers: TeamMember[] = [
         name: "ABIGAIL NAA DEDEI QUAYE",
         position: "Board Secretary",
         role: "Board of Directors",
-        photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        // photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/board/abigail_naa_deedi_quaye.jpg?updatedAt=1764454761365",
         fullBio: `Ms. Abigail Naa Dedei Quaye joined the then Quick Credit and Investment Micro-credit Ltd., after a successful career with Barclays Bank (now Absa Bank) in 2018 as an Administrative Assistant. Her dedication to work and special qualities in managing people offered her an opportunity for a Managerial position in the Human Resource Department.
 
                     By dint of hard work and dedication, Abigail has risen to become a Director, Board Secretary, and Executive Member of Bills Micro-credit Ltd, as well as the Head of Human Capital (HC). Abigail also doubles as the Group Human Capital, with all brands affiliated with Mr. Richard Nii Armah Quaye, the Board Chairman. 
@@ -166,7 +169,8 @@ export const managementTeam: TeamMember[] = [
         name: "ROMEO-RICHLOVE KWEKU ELORM SESHIE",
         position: "Chief Executive Officer",
         role: "Management",
-        photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        // photo: "/images/team/board/romeo-richlove_kweku_elorm_seshie.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/board/romeo-richlove_kweku_elorm_seshie.jpg?updatedAt=1764454762168",
         fullBio: `Romeo-Richlove Elorm Kweku Seshie is the Chief Executive Officer (CEO) of BILLS Micro-Credit Ltd, having risen through the ranks after previously serving as the General Manager and Head of Finance and Administration of the company. Under his visionary leadership, BILLS has achieved significant milestones, gaining both national and international recognition for innovation and financial inclusion.
 
                 Romeo boasts a robust academic and professional background in finance, accounting, taxation, banking and strategic management.
@@ -206,7 +210,8 @@ export const managementTeam: TeamMember[] = [
         name: "BISMARK ADJEI",
         position: "Head of Credit Union, Monitoring and Evaluation",
         role: "Management",
-        photo: "/images/team/management/bismark_adjei.jpg",
+        // photo: "/images/team/management/bismark_adjei.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/bismark_adjei.jpg?updatedAt=1764454762634",
         fullBio: `Bismark is a professional banker with over 18 years of experience spanning Microfinance, Banking Operations, and Compliance-related activities in the financial sector.
 
                 He holds a Bachelor in Business Administration (BBA), an Accounting option from Christian Service University College, and a Master of Science (MSc) in Accounting & Finance from the University of Cape Coast. Bismark is an Associate member of the Chartered Institute of Bankers (ACIB) Ghana, and a student member of the Institute of Chartered Accountants (ICA)Ghana.
@@ -241,7 +246,8 @@ export const managementTeam: TeamMember[] = [
         name: "ISAAC KWAKU EGYIR ARTHUR",
         position: "CA, CT, BCOM (HEAD OF INTERNAL AUDIT)",
         role: "Management",
-        photo: "/images/team/management/isaac_egoir_arthur.jpg",
+        // photo: "/images/team/management/isaac_egoir_arthur.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/isaac_egoir_arthur.jpg?updatedAt=1764454763062",
         fullBio: `Isaac Kwaku Egyir Arthur is a Chartered Accountant and a Chartered Tax Practitioner. He is a member in good standing with both the Institute of Chartered Accountants Ghana (ICAG) and the Chartered Institute of Taxation Ghana (CITG).
 
                     He holds a Bachelor of Commerce degree (Accounting) from the University of Cape Coast. He is currently pursuing a Master’s Degree in Accounting and Finance with the Kwame Nkrumah University of Science and Technology (KNUST).
@@ -271,7 +277,8 @@ export const managementTeam: TeamMember[] = [
         name: "NUHU SALIFU",
         position: "Head of Finance and Administration",
         role: "Management",
-        photo: "/images/team/management/nuhu_salifu.jpg",
+        // photo: "/images/team/management/nuhu_salifu.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/nuhu_salifu.jpg?updatedAt=1764454763051",
         fullBio: `Nuhu Salifu is a forty-two (42) year-old Chartered Accountant and a member of the Institute of Chartered Accountants Ghana with over 17 years experience in Accounting, Finance & Taxation. 
 
                 Nuhu is a product of the Kwame Nkrumah University of Science and Technology, where he pursued an MSc in Accounting and Finance (pending graduation).
@@ -313,7 +320,8 @@ export const managementTeam: TeamMember[] = [
         name: "KWEKU BAAH",
         position: "Head of Operations",
         role: "Management",
-        photo: "/images/team/management/kweku_bah.jpg",
+        // photo: "/images/team/management/kweku_bah.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/kweku_bah.jpg?updatedAt=1764454763997",
         fullBio: `Kweku Baah is an experienced Business Development specialist with a demonstrated history of working in the financial and sports industries. He is skilled in credit administration, sales, business development, investments, and sports marketing and has over 18 years of industrial experience.
 
                 Kweku has worked for several companies, including Pan African Savings and Loans (formerly EB-Accion Savings and Loans), Galaxy Micro Finance, and Firstrust Savings and Loans Limited.
@@ -353,7 +361,8 @@ export const managementTeam: TeamMember[] = [
         name: "ABIGAIL NAA DEDEI QUAYE",
         position: "Head of Human Capital",
         role: "Management",
-        photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        // photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/saviour_quamme.jpg?updatedAt=1764454763850",
         fullBio: `Ms. Abigail Naa Dedei Quaye joined the then Quick Credit and Investment Micro-credit Ltd., after a successful career with Barclays Bank (now Absa Bank) in 2018 as an Administrative Assistant. Her dedication to work and special qualities in managing people offered her an opportunity for a Managerial position in the Human Resource Department.
 
                     By dint of hard work and dedication, Abigail has risen to become a Director, Board Secretary, and Executive Member of Bills Micro-credit Ltd, as well as the Head of Human Capital (HC). Abigail also doubles as the Group Human Capital, with all brands affiliated with Mr. Richard Nii Armah Quaye, the Board Chairman. 

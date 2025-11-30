@@ -3,7 +3,7 @@ import { useRef } from "react";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import InfiniteCarousel from "@/components/InfiniteCarousel";
+import InfiniteScrollCarousel from "@/components/InfiniteScrollCarousel";
 import { Quote, Calendar, Award, Heart, Users, TrendingUp, CircleCheck } from "lucide-react";
 
 const Ambassadors = () => {
@@ -18,12 +18,18 @@ const Ambassadors = () => {
 
   // Community presence images - Add your image URLs here
   const communityImages = [
-    "/images/team/ambassador/community-1.jpg",
-    "/images/team/ambassador/community-2.jpg",
-    "/images/team/ambassador/community-3.jpg",
-    "/images/team/ambassador/community-4.jpg",
-    "/images/team/ambassador/community-5.jpg",
-    "/images/team/ambassador/community-6.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/moment_1.jpg",
+    "https://ik.imagekit.io/nsuolqs5g/others/ambassador/moment_8.jpg",
+    // "/images/team/ambassador/moment_2.jpg",
+    // "/images/team/ambassador/moment_3.jpg",
+    // "/images/team/ambassador/moment_4.jpg",
+    // "/images/team/ambassador/moment_5.jpg",
+    // "/images/team/ambassador/moment_6.jpg",
+    // "/images/team/ambassador/moment_7.jpg",
+    // "/images/team/ambassador/moment_8.jpg",
+    // "/images/team/ambassador/moment_9.jpg",
+    // "/images/team/ambassador/moment_10.jpg",
+    // "/images/team/ambassador/moment_11.jpg",
   ];
 
   // Ambassador data
@@ -32,7 +38,7 @@ const Ambassadors = () => {
     title: "OUR AMBASSADOR",
     image: "/images/team/ambassador/hero.webp",
     portraitImage: "/images/team/ambassador/gloria_safo.jpg",
-    quote: "Empowering dreams, one loan at a time. Together, we rise!",
+    quote: "Ambassador's quote will be here (if she has any)",
     signature: "/images/team/ambassador/signature.png",
     story: {
       origin: "Born and raised in Kumasi, I've always believed in the power of hard work and determination. My journey from humble beginnings to becoming one of Ghana's most recognized faces taught me that with the right support, anything is possible.",
@@ -140,7 +146,9 @@ const Ambassadors = () => {
             {/* Signature */}
             <div className="flex justify-center">
               <div className="relative">
-                <div className="text-4xl font-bold text-primary" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                <div className="text-4xl font-bold text-primary" 
+                style={{ fontFamily: "'Tangerine', cursive" }}
+                >
                   {ambassador.name.split(' ')[0]}
                 </div>
                 <div className="h-0.5 bg-primary/50 mt-2" />
@@ -233,7 +241,7 @@ const Ambassadors = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Community Presence
+              Moments
             </h2>
           </motion.div>
 
@@ -243,7 +251,7 @@ const Ambassadors = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <InfiniteCarousel images={communityImages} autoPlaySpeed={3000} />
+            <InfiniteScrollCarousel images={communityImages} speed={40} />
           </motion.div>
         </div>
       </section>
