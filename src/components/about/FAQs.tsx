@@ -43,10 +43,10 @@ const FAQs = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
             <HelpCircle className="w-5 h-5 text-primary" />
             <span className="text-primary font-semibold">FAQ</span>
-          </div>
+          </div> */}
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Frequently Asked Questions
           </h2>
