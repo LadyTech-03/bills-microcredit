@@ -4,6 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
+import { HelpCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FAQs = () => {
   const faqs = [
@@ -30,50 +33,76 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
+            <HelpCircle className="w-5 h-5 text-primary" />
+            <span className="text-primary font-semibold">FAQ</span>
+          </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400">
             Got questions? We've got answers
           </p>
-        </div>
+        </motion.div>
 
         {/* FAQ Accordion */}
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem
+            <motion.div
               key={index}
-              value={`item-${index}`}
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 px-6 overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <AccordionTrigger className="text-left hover:no-underline py-6">
-                <span className="text-lg font-semibold text-gray-900 dark:text-white pr-4">
-                  {faq.question}
-                </span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 dark:text-gray-300 pb-6 text-base leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+              <AccordionItem
+                value={`item-${index}`}
+                className="group bg-white dark:bg-gray-800 rounded-2xl border-2 border-gray-200 dark:border-gray-700 px-6 overflow-hidden hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+              >
+                <AccordionTrigger className="text-left hover:no-underline py-6">
+                  <div className="flex items-start gap-4 pr-4">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mt-1 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                      <span className="text-primary font-bold group-hover:text-white">
+                        {index + 1}
+                      </span>
+                    </div>
+                    <span className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">
+                      {faq.question}
+                    </span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 dark:text-gray-300 pb-6 pl-12 text-base leading-relaxed">
+                  <div className="border-l-2 border-primary/30 pl-4">
+                    {faq.answer}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </motion.div>
           ))}
         </Accordion>
 
         {/* CTA */}
         <div className="mt-12 text-center">
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Still have questions?
-          </p>
+              Still have questions?
+            </p>
           <a
             href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-          >
-            Contact Us
+            >
+              Contact Us
           </a>
-        </div>
+          </div>
       </div>
     </section>
   );
