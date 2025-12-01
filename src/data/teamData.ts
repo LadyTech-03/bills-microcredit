@@ -75,7 +75,7 @@ export const boardMembers: TeamMember[] = [
                     Born on May 2, 1984, Romeo spent most of his childhood in Keta-Anyako, in the Volta Region of Ghana. A product of Keta Business Secondary School, he remains grounded in his roots and continues to champion financial empowerment and inclusive growth across communities in Ghana.
 
                     Romeo-Richlove Seshie is widely regarded as a transformative leader and an astute financial management professional whose contributions continue to shape the future of microfinance in Ghana and beyond`,
-        linkedIn: "https://linkedin.com/in/abena-osei",
+        linkedIn: "https://www.linkedin.com/in/romeo-richlove-elorm-kweku-seshie-bsc-llb-mba-ca-acib-cit-cima-03370841",
         email: "vice.chair@billsmicrocredit.com",
         achievements: [
             "Pioneered rural banking expansion program",
@@ -113,7 +113,7 @@ export const boardMembers: TeamMember[] = [
 
                     Mr. Emmanuel Lamptey exemplifies the perfect blend of business acumen, leadership, and compassion—consistently driving growth, nurturing innovation, and transforming lives.`,
         email: "vice.chair@billsmicrocredit.com",
-        linkedIn: "https://linkedin.com/in/kofi-asante",
+        linkedIn: "https://www.linkedin.com/in/emmanuel-lamptey-142075272",
         achievements: [
             "Developed comprehensive risk management framework",
             "Ensured 100% regulatory compliance for 10 years",
@@ -187,7 +187,7 @@ export const managementTeam: TeamMember[] = [
                 Born on May 2, 1984, Romeo spent most of his childhood in Keta-Anyako, in the Volta Region of Ghana. A product of Keta Business Secondary School, he remains grounded in his roots and continues to champion financial empowerment and inclusive growth across communities in Ghana.
 
                 Romeo-Richlove Seshie is widely regarded as a transformative leader and an astute financial management professional whose contributions continue to shape the future of microfinance in Ghana and beyond`,
-        linkedIn: "https://linkedin.com/in/emmanuel-darko",
+        linkedIn: "https://www.linkedin.com/in/romeo-richlove-elorm-kweku-seshie-bsc-llb-mba-ca-acib-cit-cima-03370841",
         email: "ceo@billsmicrocredit.com",
         // phone: "+233 24 123 4567",
         achievements: [
@@ -255,7 +255,7 @@ export const managementTeam: TeamMember[] = [
                     Isaac is well-versed in accounting, auditing, financial analysis, budgeting, taxation, and risk management. He has an excellent knowledge of QuickBooks, Tally Accounting Software, Microsoft Office Suit, and Provisio Banking Software.
 
                     Before joining Bills Micro Credit Limited, Isaac worked as a Senior Audit Associate with R-Alliance Consults where he was in charge of statutory audits of private and public sector entities. He joined Bills Micro Credit Ltd (formerly Quick Credit & Investment Micro Credit Ltd) as a Finance Manager in 2020. He is currently the Head of Internal Audit of Bills Micro Credit Limited`,
-        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        linkedIn: "https://www.linkedin.com/in/ikearthur",
         email: "coo@billsmicrocredit.com",
         achievements: [
             "Expanded operations to all 16 regions of Ghana",
@@ -298,7 +298,7 @@ export const managementTeam: TeamMember[] = [
                 He is a Ghanaian, married, and has since been blessed with four children.
 
                 Nuhu’s main hobbies include reading and cycling.`,
-        linkedIn: "https://linkedin.com/in/yaw-mensah",
+        linkedIn: "https://www.linkedin.com/in/nuhu-salifu-3ba67470",
         email: "coo@billsmicrocredit.com",
         achievements: [
             "Expanded operations to all 16 regions of Ghana",
@@ -362,7 +362,7 @@ export const managementTeam: TeamMember[] = [
         position: "Head of Human Capital",
         role: "Management",
         // photo: "/images/team/board/abigail_naa_deedi_quaye.jpg",
-        photo: "https://ik.imagekit.io/nsuolqs5g/others/management/saviour_quamme.jpg?updatedAt=1764454763850",
+        photo: "https://ik.imagekit.io/nsuolqs5g/others/board/abigail_naa_deedi_quaye.jpg?updatedAt=1764454761365",
         fullBio: `Ms. Abigail Naa Dedei Quaye joined the then Quick Credit and Investment Micro-credit Ltd., after a successful career with Barclays Bank (now Absa Bank) in 2018 as an Administrative Assistant. Her dedication to work and special qualities in managing people offered her an opportunity for a Managerial position in the Human Resource Department.
 
                     By dint of hard work and dedication, Abigail has risen to become a Director, Board Secretary, and Executive Member of Bills Micro-credit Ltd, as well as the Head of Human Capital (HC). Abigail also doubles as the Group Human Capital, with all brands affiliated with Mr. Richard Nii Armah Quaye, the Board Chairman. 
