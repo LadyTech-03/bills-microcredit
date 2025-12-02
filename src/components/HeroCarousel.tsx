@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { useNavigate } from "react-router-dom";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
@@ -15,6 +16,7 @@ const slides = [
     cta: "Apply Now",
     overlayClass: "bg-gradient-to-br from-primary/50 via-primary/20 to-black/30",
     position: "left" as const,
+    link: "how-to-apply",
   },
   {
     // image: hero2,
@@ -25,6 +27,7 @@ const slides = [
     // overlayClass: "bg-gradient-to-tl from-primary/50 via-primary/20 to-black/30",
     overlayClass: "bg-topbar/60",
     position: "center" as const,
+    link: "/contact",
   },
   {
     // image: hero3,
@@ -35,6 +38,7 @@ const slides = [
     // overlayClass: "bg-gradient-to-tr from-primary/50 via-primary/20 to-black/30",
     overlayClass: "bg-topbar/80",
     position: "right" as const,
+    link: "/contact",
   },
   {
     // image: hero4,
@@ -45,12 +49,15 @@ const slides = [
     // overlayClass: "bg-gradient-to-bl from-primary/60 via-primary/10 to-black/30",
     overlayClass: "bg-topbar/60",
     position: "left" as const,
+    link: "how-to-apply",
   },
 ];
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -59,6 +66,18 @@ const HeroCarousel = () => {
 
     return () => clearInterval(timer);
   }, [currentSlide]);
+
+    // Smooth scroll to How to Apply section
+  const scrollToHowToApply = (link: string) => {
+    if (link === "how-to-apply") {
+      const howToApplySection = document.getElementById('how-to-apply');
+      if (howToApplySection) {
+        howToApplySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate(link);
+    }
+  };
 
   const handlePrevious = () => {
     if (isAnimating) return;
@@ -81,8 +100,8 @@ const HeroCarousel = () => {
           key={index}
           className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
             index === currentSlide
-              ? "opacity-100 scale-100"
-              : "opacity-0 scale-105"
+              ? "opacity-100 scale-100 pointer-events-auto"
+              : "opacity-0 scale-105 pointer-events-none"
           }`}
         >
           {/* Background Image */}
@@ -119,6 +138,7 @@ const HeroCarousel = () => {
 
                 {/* CTA Button */}
                 <Button 
+                  onClick={() => scrollToHowToApply(slide.link)}
                   className="bg-primary hover:bg-topbar text-primary-foreground px-8 py-6 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 animate-scale-in z-50"
                 >
                   {slide.cta}

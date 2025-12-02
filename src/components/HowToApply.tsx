@@ -202,6 +202,7 @@ const HowToApply = () => {
 
   return (
     <section
+      id="how-to-apply"
       ref={containerRef}
       className="relative h-screen overflow-hidden bg-white dark:bg-gray-900"
     >
@@ -271,8 +272,8 @@ const HowToApply = () => {
       {/* Horizontal Scroll Container */}
       <div
         ref={scrollContainerRef}
-        className="absolute top-0 left-0 h-full flex items-center pl-[50vw] gap-32"
-        style={{ width: `${steps.length * 50 + 50}vw` }}
+        className="absolute top-0 left-0 h-full flex items-center pl-[10vw] gap-32"
+        style={{ width: `${steps.length * 50 + 10}vw` }}
       >
         {/* Step Cards */}
         {steps.map((step, index) => {
