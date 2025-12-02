@@ -59,15 +59,8 @@ const HeroCarousel = () => {
   const navigate = useNavigate();
 
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNext();
-    }, 4000);
 
-    return () => clearInterval(timer);
-  }, [currentSlide]);
-
-    // Smooth scroll to How to Apply section
+  // Smooth scroll to How to Apply section
   const scrollToHowToApply = (link: string) => {
     if (link === "how-to-apply") {
       const howToApplySection = document.getElementById('how-to-apply');
@@ -92,6 +85,15 @@ const HeroCarousel = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     setTimeout(() => setIsAnimating(false), 800);
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
 
   return (
     <div className="relative h-[calc(100vh-120px)] min-h-[600px] overflow-hidden">
