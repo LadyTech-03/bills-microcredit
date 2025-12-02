@@ -23,6 +23,7 @@ const OurReach = () => {
               src="https://ik.imagekit.io/nsuolqs5g/others/ghana_map.png?updatedAt=1764454775206"
               alt="Ghana Map - Bills Microcredit Coverage"
               className="w-full h-full object-contain p-8 hover:scale-105 transition-all duration-1000"
+              loading="eager"
             />
             {/* <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 shadow-lg">
               <div className="flex items-center gap-2">

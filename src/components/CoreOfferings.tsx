@@ -7,7 +7,7 @@ import { PiHandCoinsBold } from "react-icons/pi";
 const offerings = [
   {
     id: 1,
-    title: "Business Expansion Loan",
+    title: "Working Capital Loans",
     description: "Support to grow and scale your business.",
     icon: LuBriefcaseBusiness,
     image: "https://ik.imagekit.io/nsuolqs5g/others/business_expansion.jpg?updatedAt=1764454760957",
@@ -27,7 +27,7 @@ const offerings = [
   },
   {
     id: 3,
-    title: "Start-Up Loan",
+    title: "Start-up Capital Loan",
     description: "Turn your skills into a thriving business.",
     icon: GrGrow,
     image: "https://ik.imagekit.io/nsuolqs5g/others/startup.jpg?updatedAt=1764454773779",
@@ -37,7 +37,7 @@ const offerings = [
   },
   {
     id: 4,
-    title: "Salary Advance",
+    title: "Salary Loans",
     description: "Meet financial needs before payday.",
     icon: PiHandCoinsBold,
     image: "https://ik.imagekit.io/nsuolqs5g/others/salary.png?updatedAt=1764454766739",
