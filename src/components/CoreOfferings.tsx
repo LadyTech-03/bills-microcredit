@@ -17,7 +17,7 @@ const offerings = [
   },
   {
     id: 2,
-    title: "Emergency Loan",
+    title: "Emergency Loans",
     description: "Quick relief when unexpected needs arise.",
     icon: AlertCircle,
     image: "https://ik.imagekit.io/nsuolqs5g/others/emergency.jpg?updatedAt=1764454760540",
@@ -27,7 +27,7 @@ const offerings = [
   },
   {
     id: 3,
-    title: "Start-up Capital Loan",
+    title: "Start-up Capital Loans",
     description: "Turn your skills into a thriving business.",
     icon: GrGrow,
     image: "https://ik.imagekit.io/nsuolqs5g/others/startup.jpg?updatedAt=1764454773779",
@@ -72,7 +72,7 @@ const CoreOfferings = () => {
   return (
     <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 overflow-hidden">
 
-      <div className="max-w-full sm:max-w-[70%] mx-auto relative z-10">
+      <div className="max-w-full xl:max-w-[70%] mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full">
@@ -80,7 +80,7 @@ const CoreOfferings = () => {
               Our Products
             </p>
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
             Core Offerings
           </h2>
         </div>
@@ -197,7 +197,7 @@ const CoreOfferings = () => {
                           ? `bg-primary text-white shadow-lg`
                           : `${offering.bgColor} dark:bg-gray-700 ${offering.color} dark:text-gray-300`
                       }`}>
-                        <IconComponent className="w-8 h-8" strokeWidth={2} />
+                        <IconComponent className="w-6 h-6 lg:w-8 lg:h-8" strokeWidth={2} />
                       </div>
                     </div>
 
