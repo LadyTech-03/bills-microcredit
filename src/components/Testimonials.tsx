@@ -61,7 +61,6 @@ const StarRating = ({ rating }: { rating: number }) => {
 
 const Testimonials = () => {
   const [isPaused, setIsPaused] = useState(false);
-
   // Duplicate testimonials for seamless loop
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
@@ -151,9 +150,9 @@ const Testimonials = () => {
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             Join thousands of satisfied customers
           </p>
-          <button className="px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-            Call us now
-          </button>
+          <a href="/contact" className="px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            Get in touch
+          </a>
         </div>
       </div>
 

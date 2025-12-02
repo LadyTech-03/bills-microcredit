@@ -88,7 +88,7 @@ const AboutUs = () => {
                   className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-500 group hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 rounded-xl bg-topbar-foreground flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-topbar-foreground flex items-center justify-center group-hover:opacity-70 transition-opacity duration-300">
                       <IconComponent className="w-7 h-7 text-topbar" strokeWidth={2.5} />
                     </div>
                     <div>
