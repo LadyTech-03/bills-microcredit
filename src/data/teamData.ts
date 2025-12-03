@@ -211,7 +211,7 @@ export const managementTeam: TeamMember[] = [
         position: "Head of Credit Union, Monitoring and Evaluation",
         role: "Management",
         // photo: "/images/team/management/bismark_adjei.jpg",
-        photo: "https://res.cloudinary.com/dmhtrzmfa/image/upload/v1764757150/BISMARK_ADJEI-6B_mdotca.jpg",
+        photo: "https://i.postimg.cc/XJqBZMfG/BISMARK_ADJEI_6B.jpg",
         fullBio: `Bismark is a professional banker with over 18 years of experience spanning Microfinance, Banking Operations, and Compliance-related activities in the financial sector.
 
                 He holds a Bachelor in Business Administration (BBA), an Accounting option from Christian Service University College, and a Master of Science (MSc) in Accounting & Finance from the University of Cape Coast. Bismark is an Associate member of the Chartered Institute of Bankers (ACIB) Ghana, and a student member of the Institute of Chartered Accountants (ICA)Ghana.
@@ -247,7 +247,7 @@ export const managementTeam: TeamMember[] = [
         position: "CA, CT, BCOM (HEAD OF INTERNAL AUDIT)",
         role: "Management",
         // photo: "/images/team/management/isaac_egoir_arthur.jpg",
-        photo: "https://res.cloudinary.com/dmhtrzmfa/image/upload/v1764757186/ISAAC_ARTHUR-32i_vlrhw5.jpg",
+        photo: "https://i.postimg.cc/J0Byqbd0/ISAAC_ARTHUR_32i.jpg",
         fullBio: `Isaac Kwaku Egyir Arthur is a Chartered Accountant and a Chartered Tax Practitioner. He is a member in good standing with both the Institute of Chartered Accountants Ghana (ICAG) and the Chartered Institute of Taxation Ghana (CITG).
 
                     He holds a Bachelor of Commerce degree (Accounting) from the University of Cape Coast. He is currently pursuing a Master’s Degree in Accounting and Finance with the Kwame Nkrumah University of Science and Technology (KNUST).
@@ -278,7 +278,7 @@ export const managementTeam: TeamMember[] = [
         position: "Head of Finance and Administration",
         role: "Management",
         // photo: "/images/team/management/nuhu_salifu.jpg",
-        photo: "https://res.cloudinary.com/dmhtrzmfa/image/upload/v1764757251/NUHU_SALIFU-33_f0fb6r.jpg",
+        photo: "https://i.postimg.cc/JtVsdG9L/NUHU_SALIFU_33.jpg",
         fullBio: `Nuhu Salifu is a forty-two (42) year-old Chartered Accountant and a member of the Institute of Chartered Accountants Ghana with over 17 years experience in Accounting, Finance & Taxation. 
 
                 Nuhu is a product of the Kwame Nkrumah University of Science and Technology, where he pursued an MSc in Accounting and Finance (pending graduation).
@@ -321,7 +321,7 @@ export const managementTeam: TeamMember[] = [
         position: "Head of Operations",
         role: "Management",
         // photo: "/images/team/management/kweku_bah.jpg",
-        photo: "https://res.cloudinary.com/dmhtrzmfa/image/upload/v1764757237/KWAKU_BAAH-33K_uz96gc.jpg",
+        photo: "https://i.postimg.cc/NLqKP5W2/KWAKU_BAAH_33K.jpg",
         fullBio: `Kweku Baah is an experienced Business Development specialist with a demonstrated history of working in the financial and sports industries. He is skilled in credit administration, sales, business development, investments, and sports marketing and has over 18 years of industrial experience.
 
                 Kweku has worked for several companies, including Pan African Savings and Loans (formerly EB-Accion Savings and Loans), Galaxy Micro Finance, and Firstrust Savings and Loans Limited.
@@ -395,7 +395,7 @@ export const managementTeam: TeamMember[] = [
         position: "Head of Recovery",
         role: "Management",
         // photo: "/images/team/management/saviour_quamme.jpg",
-        photo: "https://res.cloudinary.com/dmhtrzmfa/image/upload/v1764757298/SAVIOUR-15_tidp9u.jpg",
+        photo: "https://i.postimg.cc/rzXDYKvW/SAVIOUR_15.jpg",
         fullBio: `Saviour Quammey is a highly driven and results-oriented professional with over a decade of experience across finance, compliance, credit operations, and recovery. He currently serves as the Head of Recovery at Bills Microcredit, where he leads the design and execution of recovery strategies aimed at maintaining the health and sustainability of the company’s loan portfolio.
 
  
