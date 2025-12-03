@@ -70,9 +70,9 @@ const CoreOfferings = () => {
   };
 
   return (
-    <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+    <section className="relative py-10 sm:py-16 px-4 sm:px-6 lg:px-8 bg-topbar/5 overflow-hidden">
 
-      <div className="max-w-full xl:max-w-[70%] mx-auto relative z-10">
+      <div className="max-w-full xl:max-w-[80%] 2xl:max-w-[70%] mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full">
@@ -86,9 +86,9 @@ const CoreOfferings = () => {
         </div>
 
         {/* Main Content - Featured Carousel + Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16 mb-16">
           {/* Featured Carousel */}
-          <div className="relative order-first">
+          <div className="relative hidden xl:block order-first">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] group">
               {offerings.map((offering, index) => (
                 <div
@@ -180,10 +180,10 @@ const CoreOfferings = () => {
                   onMouseLeave={() => setHoveredCard(null)}
                 >
                   {/* Card */}
-                  <div className={`relative h-full rounded-2xl p-8 transition-all duration-500 ${
+                  <div className={`relative h-full rounded-2xl p-8 transition-all duration-500  ${
                     isActive 
-                      ? "bg-white dark:bg-gray-800 shadow-2xl ring-2 ring-primary" 
-                      : "bg-white/80 dark:bg-gray-800/80 shadow-lg hover:shadow-xl backdrop-blur-sm"
+                      ? "bg-white shadow-2xl ring-2 ring-primary" 
+                      : "bg-white/80 shadow-lg hover:shadow-xl backdrop-blur-sm"
                   }`}>
                     {/* Subtle Background on Hover */}
                     <div className={`absolute inset-0 rounded-2xl ${offering.bgColor} dark:bg-gray-700/30 opacity-0 transition-opacity duration-500 ${
@@ -191,19 +191,19 @@ const CoreOfferings = () => {
                     }`}></div>
 
                     {/* Icon */}
-                    <div className="relative mb-6">
+                    <div className="relative">
                       <div className={`inline-flex p-4 rounded-xl transition-all duration-500 ${
                         isActive
                           ? `bg-primary text-white shadow-lg`
                           : `${offering.bgColor} dark:bg-gray-700 ${offering.color} dark:text-gray-300`
                       }`}>
-                        <IconComponent className="w-6 h-6 lg:w-8 lg:h-8" strokeWidth={2} />
+                        <IconComponent className="w-6 h-6 xl:w-8 xl:h-8" strokeWidth={2} />
                       </div>
                     </div>
 
                     {/* Content */}
                     <div className="relative">
-                      <h3 className={`text-3xl font-bold mb-3 transition-all duration-500 ${
+                      <h3 className={`text-xl md:text-2xl xl:text-2xl 2xl:text-3xl font-bold mb-3 transition-all duration-500 ${
                         isActive
                           ? "text-gray-900 dark:text-white"
                           : "text-gray-800 dark:text-gray-200"

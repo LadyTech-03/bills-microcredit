@@ -272,7 +272,7 @@ const HowToApply = () => {
       {/* Horizontal Scroll Container */}
       <div
         ref={scrollContainerRef}
-        className="absolute top-0 left-0 h-full flex items-center pl-[10vw] gap-32"
+        className="absolute top-0 left-0 h-full flex items-center pl-[10vw] gap-16 md:gap-32"
         style={{ width: `${steps.length * 50 + 10}vw` }}
       >
         {/* Step Cards */}
@@ -305,7 +305,7 @@ const HowToApply = () => {
                   <img
                     src={step.image}
                     alt={step.title}
-                    className="absolute inset-0 w-[25vw] h-full object-cover mx-auto"
+                    className="absolute inset-0 w-full lg:w-[25vw] h-full object-cover mx-auto"
                   />
                   
                   {/* Dark Gradient Overlay for Text Visibility */}
@@ -316,17 +316,17 @@ const HowToApply = () => {
                     {/* Icon with Gradient Background */}
                     <div className="relative w-14 h-14 mb-4">
                       <div className="relative w-full h-full rounded-2xl flex items-center justify-center">
-                        <IconComponent className="size-10 text-white" strokeWidth={2.5} />
+                        <IconComponent className="size-8 md:size-10 text-white" strokeWidth={2.5} />
                       </div>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl md:text-3xl font-extrabold text-white mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
                       {step.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm font-medium text-white/90 leading-relaxed">
+                    <p className="text-xs md:text-sm font-medium text-white/90 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -345,7 +345,7 @@ const HowToApply = () => {
               // src="/images/cta-woman.png"
               src="https://ik.imagekit.io/nsuolqs5g/others/cta-woman.png?updatedAt=1764454769933"
               alt="Apply Now"
-              className="absolute inset-0 w-[40vw] h-auto object-cover object-center"
+              className="absolute inset-0 w-full md:w-[40vw] h-auto object-cover object-center"
             />
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/70" />
